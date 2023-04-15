@@ -7,7 +7,7 @@ pub=$(echo "$keys" | awk '/Public key:/ {print $3}')
 serverIp=$(curl -s ifconfig.me)
 uuid=$(xray uuid)
 shortId=$(openssl rand -hex 8)
-url="vless://$uuid@$serverIp:443?path=%2F&security=reality&encryption=none&flow=xtls-rprx-vision&pbk=$pub&fp=chrome&type=http&sni=yahoo.com&sid=$shortId#IRVLESS-REALITY-04"
+url="vless://$uuid@$serverIp:17515?path=%2F&security=reality&encryption=none&flow=xtls-rprx-vision&pbk=$pub&fp=chrome&type=http&sni=yahoo.com&sid=$shortId#IRVLESS-REALITY-04"
 
 newJson=$(echo "$json" | jq \
     --arg pk "$pk" \
