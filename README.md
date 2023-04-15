@@ -29,7 +29,7 @@ docker build -t xrayreality .
 ```
 3. run 
 ``` bash
- docker run -d --name xrayreality -p 443:17515 xrayreality
+ docker run -d --name xrayreality -p 17515:17515 xrayreality
 ```
 4. get connection config :
 > get url
