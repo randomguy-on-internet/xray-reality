@@ -4,13 +4,13 @@ This is a Bash script that installs Xray Beta and downloads the configuration fo
 ## Installation Guide
 just need you to run this command
 ```
- bash -c "$(curl -L https://raw.githubusercontent.com/sajjaddg/xray-reality/master/install.sh)"
+ bash -c "$(curl -L https://raw.githubusercontent.com/randomguy-on-internet/xray-reality/master/install.sh)"
 ``` 
 and it will do the rest for you.
 
 ## Uninstallation guide
 ```
- bash -c "$(curl -L https://raw.githubusercontent.com/sajjaddg/xray-reality/master/uninstall.sh)"
+ bash -c "$(curl -L https://raw.githubusercontent.com/randomguy-on-internet/xray-reality/master/uninstall.sh)"
 ``` 
 
 ## Installation Guide with Docker 
@@ -21,7 +21,7 @@ curl -fsSL https://get.docker.com | sh
 ```
 1. clone this project 
 ``` bash
-git clone https://github.com/sajjaddg/xray-reality && cd xray-reality
+git clone https://github.com/randomguy-on-internet/xray-reality && cd xray-reality
 ```
 2. build docker image 
 ``` bash
@@ -29,7 +29,7 @@ docker build -t xrayreality .
 ```
 3. run 
 ``` bash
- docker run -d --name xrayreality -p443:443 xrayreality
+ docker run -d --name xrayreality -p 443:17515 xrayreality
 ```
 4. get connection config :
 > get url
